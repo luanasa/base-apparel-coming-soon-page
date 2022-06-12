@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+nav {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.desktop-img {
+  display: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.wrapper h1 {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 1.2em;
+    letter-spacing: 0.25em;
+    opacity: 0.75;
+
+    margin-bottom: -0.05rem;
+}
+
+.first {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+  }
+
+  .wrapper p {
+    color: hsl(0, 36%, 70%);
+    font-weight: 600;
+    text-align:center;
+    line-height: 1.75em;
+    opacity: 0.75;
+  }
+
+  form {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 3rem;
+  }
+
+  #email {
+    border-radius: 50px;
+    border: 1px solid hsl(0, 36%, 70%);
+    width: 80%;
+    height: 50px;
+    padding-left: 25px;
+    color: hsl(0, 36%, 70%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+  }
+
+  #submit {
+    width: 80px;
+    height: 57px;
+    border-radius: 50px;
+    align-self: flex-end;
+    border: 0;
+    cursor: pointer;
+    margin-left: -80px;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 0px 10px 10px rgba(245, 176, 176, 0.5);
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    margin-bottom: 1rem;
+  }
+
+footer p {
+    color: hsl(0, 36%, 70%);
+    margin-bottom: -0.1rem;
+}
+
+footer p a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.75;
+}
+
+
+/* RESPONSIVE */
+
+@media (min-width: 701px) {
+  nav {
+    margin-left: 15rem;
+
+    margin-bottom: 5rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  text-align: center;
+
+  margin-left: 15rem;
+}
+
+.desktop-img {
+  display: block;
+
+  margin-top: -10rem;
+  height: 100%;
+
+}
+
+.mobile-img {
+  display: none;
+}
+
+.wrapper h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  width: 10%;
+}
+
+.first {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+
+.wrapper p {
+  text-align: left;
+  width: 69%;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+
+  margin-top: 2rem;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+}
